@@ -1,6 +1,5 @@
 //
-//  RouteViewModel.swift
-//  firstmodel
+//  CurrentLocationView.swift
 //
 //  Created by Jari D'haenens on 29/11/2021.
 //
@@ -10,7 +9,7 @@ enum MapDetails {
     static let startingLocation = CLLocationCoordinate2DMake(51.054588, 3.721880)
 }
 
-final class RouteViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
+final class CurrentLocationView: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     
     @Published var region = MKCoordinateRegion(center: MapDetails.startingLocation,

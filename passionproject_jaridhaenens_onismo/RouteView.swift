@@ -19,6 +19,7 @@ struct RouteView: UIViewRepresentable {
   func makeUIView(context: Context) -> MKMapView {
     let mapView = MKMapView()
     mapView.delegate = context.coordinator
+    mapView.showsUserLocation = true
     
     let region = MKCoordinateRegion(
       center: CLLocationCoordinate2D(latitude: 51.002441, longitude: 3.747810),

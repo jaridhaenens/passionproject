@@ -9,10 +9,22 @@ import MapKit
 import SwiftUI
 
 struct ChapterView: View {
+    
+    @StateObject private var viewModel = CurrentLocationView()
     var body: some View {
         VStack {
             RouteView()
+                .onAppear {
+                    viewModel.checkIfLocationManagerIsEnabled()
+                }
                 .ignoresSafeArea()
+            
+//            Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+//                .ignoresSafeArea()
+//                .accentColor(Color(.systemPink))
+//                .onAppear {
+//                    viewModel.checkIfLocationManagerIsEnabled()
+//                }
             
             VStack(alignment: .leading) {
                 Text("Chapter 1")
@@ -22,6 +34,7 @@ struct ChapterView: View {
             }
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         }
+        .ignoresSafeArea()
     }
 }
 
