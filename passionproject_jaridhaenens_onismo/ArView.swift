@@ -8,13 +8,14 @@
 import RealityKit
 import SwiftUI
 import ARKit
+import FocusEntity
 
 struct ArView: View {
     @State private var isPlacementEnabled = false
     @State private var selectedModel: String?
     @State private var modelConfirmedForPlacement: String?
     
-    var models: [String] = ["toy_drummer"]
+    var models: [String] = ["toy_drummer", "gramophone", "toy_car"]
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -52,7 +53,10 @@ struct ARViewContainer: UIViewRepresentable {
             config.sceneReconstruction = .mesh
         }
         
+        let focusSquare =  FocusEntity(on: arView, style: .classic(color: .yellow))
+
         arView.session.run(config)
+        
         
         // Load the "Box" scene from the "Experience" Reality File
 //         let boxAnchor = try! Experience.loadBox()
@@ -83,12 +87,20 @@ struct ARViewContainer: UIViewRepresentable {
             anchorEntity.addChild(modelEntity)
             uiView.scene.addAnchor(anchorEntity)
             
+            anchorEntity.availableAnimations.forEach {
+                anchorEntity.playAnimation($0.repeat())
+            }
+            
             DispatchQueue.main.async {
                 self.modelConfirmedForPlacement = nil
             }
             
         }
     }
+    
+}
+
+class CustomARView: ARView {
     
 }
 
@@ -102,7 +114,7 @@ struct ModelPickerView: View {
     
     var body: some View {
         
-        VStack {
+        HStack {
             ForEach(0 ..< self.models.count){
                 index in
                 Button(action: {

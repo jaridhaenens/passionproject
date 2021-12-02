@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		E72395B62757CE9900F0F2DE /* ArController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395B52757CE9900F0F2DE /* ArController.swift */; };
 		E72395DB2758142600F0F2DE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72395DA2758142600F0F2DE /* Launch Screen.storyboard */; };
 		E72395DD2758236B00F0F2DE /* ArModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395DC2758236B00F0F2DE /* ArModel.swift */; };
+		E72395E027584ACD00F0F2DE /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = E72395DF27584ACD00F0F2DE /* FocusEntity */; };
+		E72395E227584F4100F0F2DE /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E72395E127584F4000F0F2DE /* gramophone.usdz */; };
+		E72395E427584FBA00F0F2DE /* toy_car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E72395E327584FBA00F0F2DE /* toy_car.usdz */; };
 		E7778805275662CB0045B9D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7778804275662CB0045B9D9 /* AppDelegate.swift */; };
 		E7778807275662CB0045B9D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7778806275662CB0045B9D9 /* ContentView.swift */; };
 		E7778809275662CB0045B9D9 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = E7778808275662CB0045B9D9 /* Experience.rcproject */; };
@@ -32,6 +35,8 @@
 		E72395B52757CE9900F0F2DE /* ArController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArController.swift; sourceTree = "<group>"; };
 		E72395DA2758142600F0F2DE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E72395DC2758236B00F0F2DE /* ArModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArModel.swift; sourceTree = "<group>"; };
+		E72395E127584F4000F0F2DE /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
+		E72395E327584FBA00F0F2DE /* toy_car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_car.usdz; sourceTree = "<group>"; };
 		E7778801275662CB0045B9D9 /* passionproject_jaridhaenens_onismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passionproject_jaridhaenens_onismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7778804275662CB0045B9D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7778806275662CB0045B9D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72395E027584ACD00F0F2DE /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +80,8 @@
 		E72395B22757C7D700F0F2DE /* AR Models */ = {
 			isa = PBXGroup;
 			children = (
+				E72395E127584F4000F0F2DE /* gramophone.usdz */,
+				E72395E327584FBA00F0F2DE /* toy_car.usdz */,
 				E72395B32757C7E900F0F2DE /* toy_drummer.usdz */,
 			);
 			path = "AR Models";
@@ -142,6 +150,9 @@
 			dependencies = (
 			);
 			name = passionproject_jaridhaenens_onismo;
+			packageProductDependencies = (
+				E72395DF27584ACD00F0F2DE /* FocusEntity */,
+			);
 			productName = passionproject_jaridhaenens_onismo;
 			productReference = E7778801275662CB0045B9D9 /* passionproject_jaridhaenens_onismo.app */;
 			productType = "com.apple.product-type.application";
@@ -169,6 +180,9 @@
 				Base,
 			);
 			mainGroup = E77787F8275662CB0045B9D9;
+			packageReferences = (
+				E72395DE27584ACD00F0F2DE /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = E7778802275662CB0045B9D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,6 +201,8 @@
 				E777880B275662CC0045B9D9 /* Assets.xcassets in Resources */,
 				E72395DB2758142600F0F2DE /* Launch Screen.storyboard in Resources */,
 				E72395B42757C7E900F0F2DE /* toy_drummer.usdz in Resources */,
+				E72395E227584F4100F0F2DE /* gramophone.usdz in Resources */,
+				E72395E427584FBA00F0F2DE /* toy_car.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E72395DE27584ACD00F0F2DE /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E72395DF27584ACD00F0F2DE /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E72395DE27584ACD00F0F2DE /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E77787F9275662CB0045B9D9 /* Project object */;
 }
