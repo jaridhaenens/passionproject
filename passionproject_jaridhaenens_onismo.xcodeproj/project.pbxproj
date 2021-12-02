@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E72395AA2757A85700F0F2DE /* ViewpointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395A92757A85700F0F2DE /* ViewpointView.swift */; };
+		E72395AF2757B0C100F0F2DE /* FindImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395AE2757B0C100F0F2DE /* FindImageView.swift */; };
+		E72395B12757C78400F0F2DE /* ArView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395B02757C78400F0F2DE /* ArView.swift */; };
+		E72395B42757C7E900F0F2DE /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E72395B32757C7E900F0F2DE /* toy_drummer.usdz */; };
+		E72395B62757CE9900F0F2DE /* ArController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395B52757CE9900F0F2DE /* ArController.swift */; };
+		E72395DB2758142600F0F2DE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72395DA2758142600F0F2DE /* Launch Screen.storyboard */; };
+		E72395DD2758236B00F0F2DE /* ArModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395DC2758236B00F0F2DE /* ArModel.swift */; };
 		E7778805275662CB0045B9D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7778804275662CB0045B9D9 /* AppDelegate.swift */; };
 		E7778807275662CB0045B9D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7778806275662CB0045B9D9 /* ContentView.swift */; };
 		E7778809275662CB0045B9D9 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = E7778808275662CB0045B9D9 /* Experience.rcproject */; };
@@ -18,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E72395A92757A85700F0F2DE /* ViewpointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewpointView.swift; sourceTree = "<group>"; };
+		E72395AE2757B0C100F0F2DE /* FindImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindImageView.swift; sourceTree = "<group>"; };
+		E72395B02757C78400F0F2DE /* ArView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArView.swift; sourceTree = "<group>"; };
+		E72395B32757C7E900F0F2DE /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
+		E72395B52757CE9900F0F2DE /* ArController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArController.swift; sourceTree = "<group>"; };
+		E72395DA2758142600F0F2DE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E72395DC2758236B00F0F2DE /* ArModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArModel.swift; sourceTree = "<group>"; };
 		E7778801275662CB0045B9D9 /* passionproject_jaridhaenens_onismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passionproject_jaridhaenens_onismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7778804275662CB0045B9D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7778806275662CB0045B9D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +55,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E72395AC2757B09A00F0F2DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E7778815275663D30045B9D9 /* CurrentLocationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E72395AD2757B0A900F0F2DE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E72395AE2757B0C100F0F2DE /* FindImageView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E72395B22757C7D700F0F2DE /* AR Models */ = {
+			isa = PBXGroup;
+			children = (
+				E72395B32757C7E900F0F2DE /* toy_drummer.usdz */,
+			);
+			path = "AR Models";
+			sourceTree = "<group>";
+		};
 		E77787F8275662CB0045B9D9 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +98,22 @@
 		E7778803275662CB0045B9D9 /* passionproject_jaridhaenens_onismo */ = {
 			isa = PBXGroup;
 			children = (
+				E72395B22757C7D700F0F2DE /* AR Models */,
+				E72395AD2757B0A900F0F2DE /* Helpers */,
+				E72395AC2757B09A00F0F2DE /* Models */,
 				E7778817275663D30045B9D9 /* ChapterView.swift */,
-				E7778815275663D30045B9D9 /* CurrentLocationModel.swift */,
 				E7778816275663D30045B9D9 /* RouteView.swift */,
+				E72395A92757A85700F0F2DE /* ViewpointView.swift */,
+				E72395B02757C78400F0F2DE /* ArView.swift */,
 				E7778804275662CB0045B9D9 /* AppDelegate.swift */,
 				E7778806275662CB0045B9D9 /* ContentView.swift */,
 				E7778808275662CB0045B9D9 /* Experience.rcproject */,
 				E777880A275662CC0045B9D9 /* Assets.xcassets */,
 				E777880F275662CC0045B9D9 /* Info.plist */,
 				E777880C275662CC0045B9D9 /* Preview Content */,
+				E72395B52757CE9900F0F2DE /* ArController.swift */,
+				E72395DA2758142600F0F2DE /* Launch Screen.storyboard */,
+				E72395DC2758236B00F0F2DE /* ArModel.swift */,
 			);
 			path = passionproject_jaridhaenens_onismo;
 			sourceTree = "<group>";
@@ -140,6 +185,8 @@
 			files = (
 				E777880E275662CC0045B9D9 /* Preview Assets.xcassets in Resources */,
 				E777880B275662CC0045B9D9 /* Assets.xcassets in Resources */,
+				E72395DB2758142600F0F2DE /* Launch Screen.storyboard in Resources */,
+				E72395B42757C7E900F0F2DE /* toy_drummer.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,10 +199,15 @@
 			files = (
 				E7778807275662CB0045B9D9 /* ContentView.swift in Sources */,
 				E7778819275663D30045B9D9 /* RouteView.swift in Sources */,
+				E72395AF2757B0C100F0F2DE /* FindImageView.swift in Sources */,
 				E777881A275663D30045B9D9 /* ChapterView.swift in Sources */,
 				E7778805275662CB0045B9D9 /* AppDelegate.swift in Sources */,
 				E7778818275663D30045B9D9 /* CurrentLocationModel.swift in Sources */,
+				E72395DD2758236B00F0F2DE /* ArModel.swift in Sources */,
+				E72395B12757C78400F0F2DE /* ArView.swift in Sources */,
 				E7778809275662CB0045B9D9 /* Experience.rcproject in Sources */,
+				E72395B62757CE9900F0F2DE /* ArController.swift in Sources */,
+				E72395AA2757A85700F0F2DE /* ViewpointView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

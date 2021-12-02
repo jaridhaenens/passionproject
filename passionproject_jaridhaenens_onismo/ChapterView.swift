@@ -11,7 +11,10 @@ import SwiftUI
 struct ChapterView: View {
     
     @StateObject private var viewModel = CurrentLocationView()
+    @State var shouldNavigate = false
+
     var body: some View {
+        NavigationView {
         VStack {
             RouteView()
                 .onAppear {
@@ -31,10 +34,22 @@ struct ChapterView: View {
                     .font(.custom("Gilroy-Medium", size: 34))
                 
                 Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit augmented reality. Pellentesque habitant morbi tristique senectus.")
+                
+//                NavigationLink(destination: ViewpointView()) {
+                
+                   
+        
+//                }
+
             }
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            NavigationLink(destination: ArView()) {
+                Text("Press on me")
+            }.buttonStyle(PlainButtonStyle())
+        }
         }
         .ignoresSafeArea()
+            
     }
 }
 
