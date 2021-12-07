@@ -53,9 +53,9 @@ struct ARViewContainer: UIViewRepresentable {
             config.sceneReconstruction = .mesh
         }
         
-        let focusSquare =  FocusEntity(on: arView, style: .classic(color: .yellow))
-
-        arView.session.run(config)
+        // lock for preview
+//        let focusSquare =  FocusEntity(on: arView, style: .classic(color: .yellow))
+//        arView.session.run(config)
         
         
         // Load the "Box" scene from the "Experience" Reality File
@@ -82,14 +82,15 @@ struct ARViewContainer: UIViewRepresentable {
             
             let fileName = modelName + ".usdz"
             let modelEntity = try! ModelEntity.loadModel(named: fileName)
-            let anchorEntity = AnchorEntity(plane: .any)
-            
-            anchorEntity.addChild(modelEntity)
-            uiView.scene.addAnchor(anchorEntity)
-            
-            anchorEntity.availableAnimations.forEach {
-                anchorEntity.playAnimation($0.repeat())
-            }
+            // lock for preview
+//            let anchorEntity = AnchorEntity(plane: .any)
+//            
+//            anchorEntity.addChild(modelEntity)
+//            uiView.scene.addAnchor(anchorEntity)
+//            
+//            anchorEntity.availableAnimations.forEach {
+//                anchorEntity.playAnimation($0.repeat())
+//            }
             
             DispatchQueue.main.async {
                 self.modelConfirmedForPlacement = nil

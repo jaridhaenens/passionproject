@@ -10,12 +10,14 @@ import SwiftUI
 struct ContentView : View {
     var body: some View {
         VStack {
-//            ARViewContainer().edgesIgnoringSafeArea(.all)
-//
-//            Text("Hello")
-            ChapterView()
-                .edgesIgnoringSafeArea(.all)
-//            ContentView()
+            //            ARViewContainer().edgesIgnoringSafeArea(.all)
+            //
+            //            Text("Hello")
+            NavigationView {
+                LaunchView()
+                    .edgesIgnoringSafeArea(.all)
+            }
+            //            ContentView()
         }
     }
 }
