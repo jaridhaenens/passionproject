@@ -26,7 +26,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
+	<string>Use camera to take picture</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app needs your location to show it on the map</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>

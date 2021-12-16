@@ -1,0 +1,38 @@
+import CoreML
+import Vision
+import CoreImage
+
+struct Classifier {
+    
+    private(set) var results: String?
+    private(set) var confidence: Float?
+    
+    mutating func detect(ciImage: CIImage) {
+        
+        guard let model = try? VNCoreMLModel(for: completeModel(configuration: MLModelConfiguration()).model)
+        else {
+            return
+        }
+        
+        let request = VNCoreMLRequest(model: model)
+        
+        let handler = VNImageRequestHandler(ciImage: ciImage, options: [:])
+        
+        try? handler.perform([request])
+        
+        guard let results = request.results as? [VNClassificationObservation] else {
+            return
+        }
+        
+        if let firstResult = results.first {
+            self.confidence = firstResult.confidence
+            print(self.confidence)
+//            if self.confidence == 1.0 {
+                self.results = firstResult.identifier
+//            }
+            
+        }
+        
+    }
+    
+}

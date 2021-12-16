@@ -24,6 +24,8 @@
 		E7555A9B275ED4BB0013B501 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7555A9A275ED4BB0013B501 /* Poppins-Bold.ttf */; };
 		E7555AA1275EF8450013B501 /* UpdateUserCoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7555AA0275EF8450013B501 /* UpdateUserCoords.swift */; };
 		E7555AA3275F01470013B501 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7555AA2275F01470013B501 /* TestView.swift */; };
+		E7555AA8275FAC9A0013B501 /* christmas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7555AA7275FAC9A0013B501 /* christmas.mp3 */; };
+		E7555AAA276019280013B501 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7555AA9276019280013B501 /* AudioController.swift */; };
 		E7778805275662CB0045B9D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7778804275662CB0045B9D9 /* AppDelegate.swift */; };
 		E7778807275662CB0045B9D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7778806275662CB0045B9D9 /* ContentView.swift */; };
 		E7778809275662CB0045B9D9 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = E7778808275662CB0045B9D9 /* Experience.rcproject */; };
@@ -32,6 +34,14 @@
 		E7778818275663D30045B9D9 /* CurrentLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7778815275663D30045B9D9 /* CurrentLocationModel.swift */; };
 		E7778819275663D30045B9D9 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7778816275663D30045B9D9 /* RouteView.swift */; };
 		E777881A275663D30045B9D9 /* ChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7778817275663D30045B9D9 /* ChapterView.swift */; };
+		E791E53A276871F800E43FA9 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E791E536276871F800E43FA9 /* ImageClassifier.swift */; };
+		E791E53B276871F800E43FA9 /* aiWithCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E791E537276871F800E43FA9 /* aiWithCameraView.swift */; };
+		E791E53C276871F800E43FA9 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E791E538276871F800E43FA9 /* Classifier.swift */; };
+		E791E53D276871F800E43FA9 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E791E539276871F800E43FA9 /* ImagePickerView.swift */; };
+		E791E5432768728700E43FA9 /* completeModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E791E5412768727F00E43FA9 /* completeModel.mlmodel */; };
+		E791E5442768728B00E43FA9 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E791E5422768727F00E43FA9 /* MobileNetV2.mlmodel */; };
+		E791E546276878E300E43FA9 /* ConfidenceClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E791E545276878E300E43FA9 /* ConfidenceClassifier.swift */; };
+		E7C5E783276B697D005934A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7C5E782276B697D005934A2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +61,8 @@
 		E7555A9A275ED4BB0013B501 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		E7555AA0275EF8450013B501 /* UpdateUserCoords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserCoords.swift; sourceTree = "<group>"; };
 		E7555AA2275F01470013B501 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		E7555AA7275FAC9A0013B501 /* christmas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = christmas.mp3; sourceTree = "<group>"; };
+		E7555AA9276019280013B501 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
 		E7778801275662CB0045B9D9 /* passionproject_jaridhaenens_onismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passionproject_jaridhaenens_onismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7778804275662CB0045B9D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7778806275662CB0045B9D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +73,14 @@
 		E7778815275663D30045B9D9 /* CurrentLocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLocationModel.swift; sourceTree = "<group>"; };
 		E7778816275663D30045B9D9 /* RouteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
 		E7778817275663D30045B9D9 /* ChapterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterView.swift; sourceTree = "<group>"; };
+		E791E536276871F800E43FA9 /* ImageClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		E791E537276871F800E43FA9 /* aiWithCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aiWithCameraView.swift; sourceTree = "<group>"; };
+		E791E538276871F800E43FA9 /* Classifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		E791E539276871F800E43FA9 /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		E791E5412768727F00E43FA9 /* completeModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = completeModel.mlmodel; sourceTree = "<group>"; };
+		E791E5422768727F00E43FA9 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		E791E545276878E300E43FA9 /* ConfidenceClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfidenceClassifier.swift; sourceTree = "<group>"; };
+		E7C5E782276B697D005934A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				E7778815275663D30045B9D9 /* CurrentLocationModel.swift */,
+				E7555AA9276019280013B501 /* AudioController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -86,8 +107,8 @@
 		E72395AD2757B0A900F0F2DE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E7555A95275ED3280013B501 /* Fonts */,
 				E7555A93275ED0B50013B501 /* Colors.swift */,
-				E72395AE2757B0C100F0F2DE /* FindImageView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -110,7 +131,15 @@
 				E7555A9A275ED4BB0013B501 /* Poppins-Bold.ttf */,
 			);
 			name = Fonts;
-			path = ..;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E7555AA4275FAC7B0013B501 /* Audio files */ = {
+			isa = PBXGroup;
+			children = (
+				E7555AA7275FAC9A0013B501 /* christmas.mp3 */,
+			);
+			path = "Audio files";
 			sourceTree = "<group>";
 		};
 		E77787F8275662CB0045B9D9 = {
@@ -132,25 +161,19 @@
 		E7778803275662CB0045B9D9 /* passionproject_jaridhaenens_onismo */ = {
 			isa = PBXGroup;
 			children = (
-				E72395B22757C7D700F0F2DE /* AR Models */,
 				E72395AD2757B0A900F0F2DE /* Helpers */,
-				E72395AC2757B09A00F0F2DE /* Models */,
-				E7555A95275ED3280013B501 /* Fonts */,
-				E7778817275663D30045B9D9 /* ChapterView.swift */,
-				E7555A91275ECAD30013B501 /* LaunchView.swift */,
-				E7778816275663D30045B9D9 /* RouteView.swift */,
-				E72395A92757A85700F0F2DE /* ViewpointView.swift */,
-				E72395B02757C78400F0F2DE /* ArView.swift */,
+				E791E535276871F800E43FA9 /* AI */,
+				E791E53E2768721B00E43FA9 /* Route */,
+				E791E53F2768725300E43FA9 /* AR */,
 				E7778804275662CB0045B9D9 /* AppDelegate.swift */,
 				E7778806275662CB0045B9D9 /* ContentView.swift */,
 				E7778808275662CB0045B9D9 /* Experience.rcproject */,
 				E777880A275662CC0045B9D9 /* Assets.xcassets */,
 				E777880F275662CC0045B9D9 /* Info.plist */,
+				E7C5E782276B697D005934A2 /* GoogleService-Info.plist */,
 				E777880C275662CC0045B9D9 /* Preview Content */,
-				E72395B52757CE9900F0F2DE /* ArController.swift */,
 				E72395DA2758142600F0F2DE /* Launch Screen.storyboard */,
-				E72395DC2758236B00F0F2DE /* ArModel.swift */,
-				E7555AA0275EF8450013B501 /* UpdateUserCoords.swift */,
+				E7555A91275ECAD30013B501 /* LaunchView.swift */,
 				E7555AA2275F01470013B501 /* TestView.swift */,
 			);
 			path = passionproject_jaridhaenens_onismo;
@@ -162,6 +185,53 @@
 				E777880D275662CC0045B9D9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E791E535276871F800E43FA9 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				E791E5402768727F00E43FA9 /* AI Models */,
+				E791E536276871F800E43FA9 /* ImageClassifier.swift */,
+				E791E537276871F800E43FA9 /* aiWithCameraView.swift */,
+				E791E538276871F800E43FA9 /* Classifier.swift */,
+				E791E539276871F800E43FA9 /* ImagePickerView.swift */,
+				E791E545276878E300E43FA9 /* ConfidenceClassifier.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		E791E53E2768721B00E43FA9 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				E7555AA4275FAC7B0013B501 /* Audio files */,
+				E72395AC2757B09A00F0F2DE /* Models */,
+				E7778817275663D30045B9D9 /* ChapterView.swift */,
+				E72395AE2757B0C100F0F2DE /* FindImageView.swift */,
+				E7555AA0275EF8450013B501 /* UpdateUserCoords.swift */,
+				E7778816275663D30045B9D9 /* RouteView.swift */,
+				E72395A92757A85700F0F2DE /* ViewpointView.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		E791E53F2768725300E43FA9 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				E72395B22757C7D700F0F2DE /* AR Models */,
+				E72395B02757C78400F0F2DE /* ArView.swift */,
+				E72395B52757CE9900F0F2DE /* ArController.swift */,
+				E72395DC2758236B00F0F2DE /* ArModel.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		E791E5402768727F00E43FA9 /* AI Models */ = {
+			isa = PBXGroup;
+			children = (
+				E791E5412768727F00E43FA9 /* completeModel.mlmodel */,
+				E791E5422768727F00E43FA9 /* MobileNetV2.mlmodel */,
+			);
+			path = "AI Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +304,8 @@
 				E7555A97275ED3B50013B501 /* Gilroy-ExtraBold.ttf in Resources */,
 				E72395B42757C7E900F0F2DE /* toy_drummer.usdz in Resources */,
 				E72395E227584F4100F0F2DE /* gramophone.usdz in Resources */,
+				E7555AA8275FAC9A0013B501 /* christmas.mp3 in Resources */,
+				E7C5E783276B697D005934A2 /* GoogleService-Info.plist in Resources */,
 				E72395E427584FBA00F0F2DE /* toy_car.usdz in Resources */,
 				E7555A99275ED4A80013B501 /* Poppins-Regular.ttf in Resources */,
 			);
@@ -246,20 +318,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E791E53C276871F800E43FA9 /* Classifier.swift in Sources */,
 				E7778807275662CB0045B9D9 /* ContentView.swift in Sources */,
 				E7778819275663D30045B9D9 /* RouteView.swift in Sources */,
 				E72395AF2757B0C100F0F2DE /* FindImageView.swift in Sources */,
+				E791E53D276871F800E43FA9 /* ImagePickerView.swift in Sources */,
 				E777881A275663D30045B9D9 /* ChapterView.swift in Sources */,
 				E7778805275662CB0045B9D9 /* AppDelegate.swift in Sources */,
 				E7555AA1275EF8450013B501 /* UpdateUserCoords.swift in Sources */,
+				E7555AAA276019280013B501 /* AudioController.swift in Sources */,
 				E7555AA3275F01470013B501 /* TestView.swift in Sources */,
 				E7778818275663D30045B9D9 /* CurrentLocationModel.swift in Sources */,
+				E791E53A276871F800E43FA9 /* ImageClassifier.swift in Sources */,
 				E72395DD2758236B00F0F2DE /* ArModel.swift in Sources */,
 				E72395B12757C78400F0F2DE /* ArView.swift in Sources */,
 				E7555A94275ED0B50013B501 /* Colors.swift in Sources */,
+				E791E5432768728700E43FA9 /* completeModel.mlmodel in Sources */,
+				E791E53B276871F800E43FA9 /* aiWithCameraView.swift in Sources */,
+				E791E546276878E300E43FA9 /* ConfidenceClassifier.swift in Sources */,
 				E7778809275662CB0045B9D9 /* Experience.rcproject in Sources */,
 				E7555A92275ECAD30013B501 /* LaunchView.swift in Sources */,
 				E72395B62757CE9900F0F2DE /* ArController.swift in Sources */,
+				E791E5442768728B00E43FA9 /* MobileNetV2.mlmodel in Sources */,
 				E72395AA2757A85700F0F2DE /* ViewpointView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
