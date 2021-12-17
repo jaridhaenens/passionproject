@@ -27,21 +27,8 @@ struct LaunchView: View {
                     .font(.custom("Poppins-Regular", size: 16))
                     .tracking(0.6)
                     .padding(.vertical)
-                
-//                Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-//                    HStack {
-//                        Text("Let’s Go!")
-//                            .font(.custom("Gilroy-ExtraBold", size: 17))
-//                            .foregroundColor(Color.white)
-//
-//                        Image("arrow_left")
-//                    }
-//                }
-//                .frame(minWidth: 160, idealWidth: 160, minHeight: 45, idealHeight: 45)
-//                .background(Color("darkColor"))
-//                .cornerRadius(60)
-                
-                NavigationLink(destination: ChapterView()) {
+
+                NavigationLink(destination: ChapterTest()) {
                     HStack {
                         Text("Let’s Go!")
                             .font(.custom("Gilroy-ExtraBold", size: 17))

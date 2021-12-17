@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		658829B43157B2BB94F78FFE /* Pods_passionproject_jaridhaenens_onismo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A05DFF432C383270DF9023 /* Pods_passionproject_jaridhaenens_onismo.framework */; };
 		E72395AA2757A85700F0F2DE /* ViewpointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395A92757A85700F0F2DE /* ViewpointView.swift */; };
 		E72395AF2757B0C100F0F2DE /* FindImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395AE2757B0C100F0F2DE /* FindImageView.swift */; };
 		E72395B12757C78400F0F2DE /* ArView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395B02757C78400F0F2DE /* ArView.swift */; };
@@ -17,6 +18,7 @@
 		E72395E027584ACD00F0F2DE /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = E72395DF27584ACD00F0F2DE /* FocusEntity */; };
 		E72395E227584F4100F0F2DE /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E72395E127584F4000F0F2DE /* gramophone.usdz */; };
 		E72395E427584FBA00F0F2DE /* toy_car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E72395E327584FBA00F0F2DE /* toy_car.usdz */; };
+		E74616E2276B8B7400B40E99 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74616E1276B8B7400B40E99 /* ViewModel.swift */; };
 		E7555A92275ECAD30013B501 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7555A91275ECAD30013B501 /* LaunchView.swift */; };
 		E7555A94275ED0B50013B501 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7555A93275ED0B50013B501 /* Colors.swift */; };
 		E7555A97275ED3B50013B501 /* Gilroy-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7555A96275ED3B50013B501 /* Gilroy-ExtraBold.ttf */; };
@@ -41,10 +43,18 @@
 		E791E5432768728700E43FA9 /* completeModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E791E5412768727F00E43FA9 /* completeModel.mlmodel */; };
 		E791E5442768728B00E43FA9 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E791E5422768727F00E43FA9 /* MobileNetV2.mlmodel */; };
 		E791E546276878E300E43FA9 /* ConfidenceClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E791E545276878E300E43FA9 /* ConfidenceClassifier.swift */; };
+		E7C0CAE9276BD26700AF9ECE /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0CAE8276BD26700AF9ECE /* Chapter.swift */; };
+		E7C0CAEC276BE2A700AF9ECE /* ChapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0CAEB276BE2A700AF9ECE /* ChapterTest.swift */; };
+		E7C0CAEE276BE3DF00AF9ECE /* ChapterModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0CAED276BE3DF00AF9ECE /* ChapterModelView.swift */; };
 		E7C5E783276B697D005934A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7C5E782276B697D005934A2 /* GoogleService-Info.plist */; };
+		E7F305B3276B7BCF00CF1205 /* FirebaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F305B2276B7BCF00CF1205 /* FirebaseTest.swift */; };
+		E7F305B5276B7F6000CF1205 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F305B4276B7F6000CF1205 /* Tour.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70A05DFF432C383270DF9023 /* Pods_passionproject_jaridhaenens_onismo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_passionproject_jaridhaenens_onismo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1E2AEEA11E528CBD4E694B /* Pods-passionproject_jaridhaenens_onismo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passionproject_jaridhaenens_onismo.debug.xcconfig"; path = "Target Support Files/Pods-passionproject_jaridhaenens_onismo/Pods-passionproject_jaridhaenens_onismo.debug.xcconfig"; sourceTree = "<group>"; };
+		83AAB9B33C73882C5D28A6EC /* Pods-passionproject_jaridhaenens_onismo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passionproject_jaridhaenens_onismo.release.xcconfig"; path = "Target Support Files/Pods-passionproject_jaridhaenens_onismo/Pods-passionproject_jaridhaenens_onismo.release.xcconfig"; sourceTree = "<group>"; };
 		E72395A92757A85700F0F2DE /* ViewpointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewpointView.swift; sourceTree = "<group>"; };
 		E72395AE2757B0C100F0F2DE /* FindImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindImageView.swift; sourceTree = "<group>"; };
 		E72395B02757C78400F0F2DE /* ArView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArView.swift; sourceTree = "<group>"; };
@@ -54,6 +64,7 @@
 		E72395DC2758236B00F0F2DE /* ArModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArModel.swift; sourceTree = "<group>"; };
 		E72395E127584F4000F0F2DE /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		E72395E327584FBA00F0F2DE /* toy_car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_car.usdz; sourceTree = "<group>"; };
+		E74616E1276B8B7400B40E99 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		E7555A91275ECAD30013B501 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		E7555A93275ED0B50013B501 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E7555A96275ED3B50013B501 /* Gilroy-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -80,7 +91,12 @@
 		E791E5412768727F00E43FA9 /* completeModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = completeModel.mlmodel; sourceTree = "<group>"; };
 		E791E5422768727F00E43FA9 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		E791E545276878E300E43FA9 /* ConfidenceClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfidenceClassifier.swift; sourceTree = "<group>"; };
+		E7C0CAE8276BD26700AF9ECE /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		E7C0CAEB276BE2A700AF9ECE /* ChapterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTest.swift; sourceTree = "<group>"; };
+		E7C0CAED276BE3DF00AF9ECE /* ChapterModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterModelView.swift; sourceTree = "<group>"; };
 		E7C5E782276B697D005934A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E7F305B2276B7BCF00CF1205 /* FirebaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTest.swift; sourceTree = "<group>"; };
+		E7F305B4276B7F6000CF1205 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +105,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				E72395E027584ACD00F0F2DE /* FocusEntity in Frameworks */,
+				658829B43157B2BB94F78FFE /* Pods_passionproject_jaridhaenens_onismo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70EBD9EE08F9884ACF2F765B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70A05DFF432C383270DF9023 /* Pods_passionproject_jaridhaenens_onismo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9866DA7CE2C42887CB387FB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F1E2AEEA11E528CBD4E694B /* Pods-passionproject_jaridhaenens_onismo.debug.xcconfig */,
+				83AAB9B33C73882C5D28A6EC /* Pods-passionproject_jaridhaenens_onismo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E72395AC2757B09A00F0F2DE /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +181,8 @@
 			children = (
 				E7778803275662CB0045B9D9 /* passionproject_jaridhaenens_onismo */,
 				E7778802275662CB0045B9D9 /* Products */,
+				9866DA7CE2C42887CB387FB1 /* Pods */,
+				70EBD9EE08F9884ACF2F765B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +211,9 @@
 				E72395DA2758142600F0F2DE /* Launch Screen.storyboard */,
 				E7555A91275ECAD30013B501 /* LaunchView.swift */,
 				E7555AA2275F01470013B501 /* TestView.swift */,
+				E7C0CAEA276BE28900AF9ECE /* FirebaseTests */,
+				E7F305B9276B80F100CF1205 /* ViewModels */,
+				E7F305B6276B806100CF1205 /* Models */,
 			);
 			path = passionproject_jaridhaenens_onismo;
 			sourceTree = "<group>";
@@ -234,6 +273,33 @@
 			path = "AI Models";
 			sourceTree = "<group>";
 		};
+		E7C0CAEA276BE28900AF9ECE /* FirebaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7F305B2276B7BCF00CF1205 /* FirebaseTest.swift */,
+				E7C0CAEB276BE2A700AF9ECE /* ChapterTest.swift */,
+			);
+			path = FirebaseTests;
+			sourceTree = "<group>";
+		};
+		E7F305B6276B806100CF1205 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E7C0CAE8276BD26700AF9ECE /* Chapter.swift */,
+				E7F305B4276B7F6000CF1205 /* Tour.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E7F305B9276B80F100CF1205 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E74616E1276B8B7400B40E99 /* ViewModel.swift */,
+				E7C0CAED276BE3DF00AF9ECE /* ChapterModelView.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,9 +307,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7778812275662CC0045B9D9 /* Build configuration list for PBXNativeTarget "passionproject_jaridhaenens_onismo" */;
 			buildPhases = (
+				51F394D3CE6B077B27BF9C05 /* [CP] Check Pods Manifest.lock */,
 				E77787FD275662CB0045B9D9 /* Sources */,
 				E77787FE275662CB0045B9D9 /* Frameworks */,
 				E77787FF275662CB0045B9D9 /* Resources */,
+				CA6FEFFABDF6DBE7D5F9A276 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,6 +381,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51F394D3CE6B077B27BF9C05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-passionproject_jaridhaenens_onismo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA6FEFFABDF6DBE7D5F9A276 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-passionproject_jaridhaenens_onismo/Pods-passionproject_jaridhaenens_onismo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-passionproject_jaridhaenens_onismo/Pods-passionproject_jaridhaenens_onismo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-passionproject_jaridhaenens_onismo/Pods-passionproject_jaridhaenens_onismo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E77787FD275662CB0045B9D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -321,17 +431,23 @@
 				E791E53C276871F800E43FA9 /* Classifier.swift in Sources */,
 				E7778807275662CB0045B9D9 /* ContentView.swift in Sources */,
 				E7778819275663D30045B9D9 /* RouteView.swift in Sources */,
+				E7C0CAEE276BE3DF00AF9ECE /* ChapterModelView.swift in Sources */,
 				E72395AF2757B0C100F0F2DE /* FindImageView.swift in Sources */,
+				E7F305B5276B7F6000CF1205 /* Tour.swift in Sources */,
 				E791E53D276871F800E43FA9 /* ImagePickerView.swift in Sources */,
+				E74616E2276B8B7400B40E99 /* ViewModel.swift in Sources */,
+				E7C0CAEC276BE2A700AF9ECE /* ChapterTest.swift in Sources */,
 				E777881A275663D30045B9D9 /* ChapterView.swift in Sources */,
 				E7778805275662CB0045B9D9 /* AppDelegate.swift in Sources */,
 				E7555AA1275EF8450013B501 /* UpdateUserCoords.swift in Sources */,
 				E7555AAA276019280013B501 /* AudioController.swift in Sources */,
+				E7C0CAE9276BD26700AF9ECE /* Chapter.swift in Sources */,
 				E7555AA3275F01470013B501 /* TestView.swift in Sources */,
 				E7778818275663D30045B9D9 /* CurrentLocationModel.swift in Sources */,
 				E791E53A276871F800E43FA9 /* ImageClassifier.swift in Sources */,
 				E72395DD2758236B00F0F2DE /* ArModel.swift in Sources */,
 				E72395B12757C78400F0F2DE /* ArView.swift in Sources */,
+				E7F305B3276B7BCF00CF1205 /* FirebaseTest.swift in Sources */,
 				E7555A94275ED0B50013B501 /* Colors.swift in Sources */,
 				E791E5432768728700E43FA9 /* completeModel.mlmodel in Sources */,
 				E791E53B276871F800E43FA9 /* aiWithCameraView.swift in Sources */,
@@ -465,6 +581,7 @@
 		};
 		E7778813275662CC0045B9D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F1E2AEEA11E528CBD4E694B /* Pods-passionproject_jaridhaenens_onismo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +603,7 @@
 		};
 		E7778814275662CC0045B9D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83AAB9B33C73882C5D28A6EC /* Pods-passionproject_jaridhaenens_onismo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

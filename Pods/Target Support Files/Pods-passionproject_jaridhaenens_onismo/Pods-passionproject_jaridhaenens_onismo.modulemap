@@ -1,0 +1,6 @@
+framework module Pods_passionproject_jaridhaenens_onismo {
+  umbrella header "Pods-passionproject_jaridhaenens_onismo-umbrella.h"
+
+  export *
+  module * { export * }
+}

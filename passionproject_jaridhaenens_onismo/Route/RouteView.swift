@@ -10,7 +10,7 @@ import SwiftUI
 
 struct RouteView: UIViewRepresentable {
     @ObservedObject private var locationManager = LocationManager()
-    
+    var item: Chapter
     
     typealias UIViewType = MKMapView
     
@@ -82,10 +82,12 @@ struct RouteView: UIViewRepresentable {
         let p1 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude))
         
         // Boston
-        let p2 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 37.384998, longitude: -122.106689))
+//        let p2 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 37.384998, longitude: -122.106689))
+        let p2 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude))
         
         let p2Pin = MKPointAnnotation()
-        p2Pin.coordinate = CLLocationCoordinate2D(latitude: 37.384998, longitude: -122.106689)
+//        p2Pin.coordinate = CLLocationCoordinate2D(latitude: 37.384998, longitude: -122.106689)
+        p2Pin.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
         p2Pin.title = "End Location"
         p2Pin.subtitle = "Straatnaam"
         
@@ -144,8 +146,8 @@ struct RouteView: UIViewRepresentable {
     }
 }
 
-struct RouteView_Previews: PreviewProvider {
-    static var previews: some View {
-        RouteView()
-    }
-}
+//struct RouteView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RouteView(item: <#Chapter#>)
+//    }
+//}
