@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView : View {
+    @EnvironmentObject var progressModel: ProgressModel
     var body: some View {
         VStack {
             //            ARViewContainer().edgesIgnoringSafeArea(.all)

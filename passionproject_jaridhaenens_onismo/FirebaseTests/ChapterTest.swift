@@ -8,9 +8,16 @@
 import SwiftUI
 
 
+
+
 struct ChapterTest: View {
     
     //    @Binding var tourId: String
+    
+//    var progress: Progress
+
+    @EnvironmentObject var progressModel: ProgressModel
+    
     @ObservedObject var chapterModel = ChapterModelView()
     @StateObject private var viewModel = CurrentLocationView()
     @State var shouldNavigate = false
@@ -40,18 +47,27 @@ struct ChapterTest: View {
                 .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 
                 
-                NavigationLink(destination: ViewpointView()) {
-                    Text("Press on me")
+                NavigationLink(destination: ViewpointView(chapter: item)) {
+                    HStack {
+                        Text("Ik ben op de locatie")
+                        Image(systemName: "arrow.forward.circle.fill")
+                    }
                 }
-                .buttonStyle(PlainButtonStyle())
+//                .buttonStyle(PlainButtonStyle())
             }
             
         }
+        .onAppear() {
+//            var chapterNum: Double = 0
+            print(progressModel.currentChapter)
+            chapterModel.getDataChapter(tourId: "Ru6BALZFVhyBI9lBh3VO", chapterId: progressModel.currentChapter)
+            print("loaded")
+        }
     }
     
-    init() {
-        chapterModel.getDataChapter(tourId: "Ru6BALZFVhyBI9lBh3VO", chapterId: 1)
-    }
+//    init() {
+//       
+//    }
     
 }
 

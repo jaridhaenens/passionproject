@@ -15,7 +15,7 @@ class ChapterModelView: ObservableObject {
     func getDataChapter(tourId: String, chapterId: Double) {
         
         // Get a reference to the database
-        print(tourId)
+        print(chapterId)
         let db = Firestore.firestore()
         let docRef = db.collection("tours").document(tourId).collection("chapters").whereField("chapterId", isEqualTo: chapterId)
         

@@ -12,6 +12,9 @@ struct Tour: Identifiable {
     var id: String
     var city: String
     var description: String
+    var image: String
+    var latitude: Double
+    var longitude: Double
 
     
 }

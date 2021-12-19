@@ -28,7 +28,7 @@ struct LaunchView: View {
                     .tracking(0.6)
                     .padding(.vertical)
 
-                NavigationLink(destination: ChapterTest()) {
+                NavigationLink(destination: ToursOverview()) {
                     HStack {
                         Text("Let’s Go!")
                             .font(.custom("Gilroy-ExtraBold", size: 17))

@@ -37,7 +37,10 @@ class ViewModel: ObservableObject {
                             // Create a Todo item for each document returned
                             return Tour(id: d.documentID,
                                         city: d["city"] as? String ?? "",
-                                        description: d["description"] as? String ?? ""
+                                        description: d["description"] as? String ?? "",
+                                        image: d["image"] as? String ?? "",
+                                        latitude: d["longitude"] as? Double ?? 0.0,
+                                        longitude: d["longitude"] as? Double ?? 0.0
                                         //                                        chapters: d["chapters"] as? Identifiable as! Chapter
                             )
                         }

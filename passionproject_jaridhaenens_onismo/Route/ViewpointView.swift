@@ -25,8 +25,11 @@ func loadAudio(sound: String, type: String) {
 
 struct ViewpointView: View {
     
+    var chapter: Chapter
+    
     @State private var audioLoaded = false
     @State private var audioActive = true
+    
     
     
     var body: some View {
@@ -38,12 +41,12 @@ struct ViewpointView: View {
                     .cornerRadius(10)
             }
             Spacer()
-            Text("Chapter 1")
+            Text("Hoofdstuk 1: \(chapter.name)")
                 .font(.custom("Gilroy-ExtraBold", size: 25))
                 .foregroundColor(Color("titleColor"))
                 .padding(.vertical)
             
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam rhoncus dolor vel vitae nisi, ut. Sit turpis sed mattis egestas tempor odio. Maecenas cursus nunc nibh augue vivamus fusce proin amet rhoncus. Blandit vel neque aliquam sem quis laoreet sit turpis cras. Auctor velit quisque amet, massa lorem enim. Sit felis turpis nullam gravida. Sed commodo nec nibh sagittis at et. Volutpat aliquet id egestas ac dui. Sed aliquam sed egestas elit semper viverra fringilla nibh.")
+            Text(chapter.text)
                 .font(.custom("Poppins-Regular", size: 16))
                 .tracking(0.6)
                 .foregroundColor(Color("textColor"))
@@ -84,8 +87,8 @@ struct ViewpointView: View {
     }
 }
 
-struct ViewpointView_Previews: PreviewProvider {
-    static var previews: some View {
-        ViewpointView()
-    }
-}
+//struct ViewpointView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ViewpointView()
+//    }
+//}

@@ -181,8 +181,8 @@ struct PlacementButtonsView: View {
     }
 }
 
-struct ArView_Previews: PreviewProvider {
-    static var previews: some View {
-        ViewpointView()
-    }
-}
+//struct ArView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ViewpointView()
+//    }
+//}
