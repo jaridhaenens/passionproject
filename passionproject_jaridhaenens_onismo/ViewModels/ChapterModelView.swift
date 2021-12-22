@@ -19,33 +19,6 @@ class ChapterModelView: ObservableObject {
         print(chapterId)
         let db = Firestore.firestore()
         let docRef = db.collection("tours").document(tourId).collection("chapters").whereField("chapterId", isEqualTo: chapterId)
-//        let amountRef = db.collection("tours").document(tourId).collection("chapters")
-        
-//        amountRef.getDocuments{snapshot, error in
-//
-//            self.chapterAmount = snapshot!.count
-////            print(self.chapterAmount)
-//
-//        }
-        
-//        amountRef.getDocuments{
-//            (querySnapshot, err) in
-//
-//            if let err = err
-//            {
-//                print("Error getting documents: \(err)");
-//            }
-//            else
-//            {
-//                var count = 0
-//                for document in querySnapshot!.documents {
-//                    count += 1
-//                    print("\(document.documentID) => \(document.data())");
-//                }
-//
-//                print("Count = \(count)");
-//            }
-//        }
         
         docRef.getDocuments { snapshot, error in
             
@@ -86,23 +59,7 @@ class ChapterModelView: ObservableObject {
             }
         }
         
-        // working for name only:
-//        docRef.getDocument { (document, error) in
-//            guard error == nil else {
-//                print("error", error ?? "")
-//                return
-//            }
-//
-//            if let document = document, document.exists {
-//                let data = document.data()
-//                if let data = data {
-//                    print("data", data)
-//                    self.chapterItem = data["name"] as? String ?? ""
-//                }
-//            }
-//
-//        }
-        
+   
         
         
     }

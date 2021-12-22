@@ -22,18 +22,7 @@ struct Chapter: Identifiable {
     var image: String
     var description: String
     var imageAi: String
-    
-    
-//    init(snapshot: QueryDocumentSnapshot) {
-//
-//        guard let snapshotValue = snapshot else {return}
-//        id = snapshot.documentID
-////        var snapshotValue = snapshot.data()
-//        latitude = snapshotValue["latitude"] as? Double
-//        longitude = snapshotValue["longitude"] as? Double
-//        name = snapshotValue["name"] as? String
-//        text = snapshotValue["text"] as? String
-//    }
+
 }
 
 struct ChapterObject: Identifiable {

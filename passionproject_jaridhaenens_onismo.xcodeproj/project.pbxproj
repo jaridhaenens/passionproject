@@ -11,7 +11,6 @@
 		E72395AA2757A85700F0F2DE /* ViewpointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395A92757A85700F0F2DE /* ViewpointView.swift */; };
 		E72395AF2757B0C100F0F2DE /* FindImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395AE2757B0C100F0F2DE /* FindImageView.swift */; };
 		E72395B12757C78400F0F2DE /* ArView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395B02757C78400F0F2DE /* ArView.swift */; };
-		E72395B62757CE9900F0F2DE /* ArController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395B52757CE9900F0F2DE /* ArController.swift */; };
 		E72395DB2758142600F0F2DE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72395DA2758142600F0F2DE /* Launch Screen.storyboard */; };
 		E72395DD2758236B00F0F2DE /* ArModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395DC2758236B00F0F2DE /* ArModel.swift */; };
 		E72395E027584ACD00F0F2DE /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = E72395DF27584ACD00F0F2DE /* FocusEntity */; };
@@ -70,7 +69,6 @@
 		E72395A92757A85700F0F2DE /* ViewpointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewpointView.swift; sourceTree = "<group>"; };
 		E72395AE2757B0C100F0F2DE /* FindImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindImageView.swift; sourceTree = "<group>"; };
 		E72395B02757C78400F0F2DE /* ArView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArView.swift; sourceTree = "<group>"; };
-		E72395B52757CE9900F0F2DE /* ArController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArController.swift; sourceTree = "<group>"; };
 		E72395DA2758142600F0F2DE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E72395DC2758236B00F0F2DE /* ArModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArModel.swift; sourceTree = "<group>"; };
 		E72395E127584F4000F0F2DE /* stmichielsbrug-object.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "stmichielsbrug-object.usdz"; sourceTree = "<group>"; };
@@ -304,7 +302,6 @@
 				E72395B22757C7D700F0F2DE /* AR Models */,
 				E72395B02757C78400F0F2DE /* ArView.swift */,
 				E7443F3C2773A0F000CE8FEB /* ArViewCaptured.swift */,
-				E72395B52757CE9900F0F2DE /* ArController.swift */,
 				E72395DC2758236B00F0F2DE /* ArModel.swift */,
 			);
 			path = AR;
@@ -517,7 +514,6 @@
 				E7778809275662CB0045B9D9 /* Experience.rcproject in Sources */,
 				E7443F392773816100CE8FEB /* gentModel.mlmodel in Sources */,
 				E7555A92275ECAD30013B501 /* LaunchView.swift in Sources */,
-				E72395B62757CE9900F0F2DE /* ArController.swift in Sources */,
 				E791E5442768728B00E43FA9 /* MobileNetV2.mlmodel in Sources */,
 				E72395AA2757A85700F0F2DE /* ViewpointView.swift in Sources */,
 			);

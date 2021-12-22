@@ -19,8 +19,3 @@ class ProgressModel: ObservableObject {
         currentChapter += 1
     }
 }
-
-//
-//class ChapterAmount: ObservableObject {
-//    @Published var numChapters: Int = 0
-//}
