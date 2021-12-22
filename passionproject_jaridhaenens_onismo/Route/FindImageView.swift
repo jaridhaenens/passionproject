@@ -8,19 +8,25 @@
 import SwiftUI
 
 struct FindImageView: View {
+    
+    var chapter: Chapter
+    
     var body: some View {
         HStack(alignment: .bottom) {
             VStack {
-                Image("bird")
+                Image(chapter.imageAi)
                     .resizable()
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .scaledToFill()
+                    .frame(maxWidth: .infinity)
+                    .clipped()
                 
                 HStack{
                     Text("Zoek en breng tot leven")
                     Spacer()
                     Image(systemName: "arrow.forward.circle.fill")
                 }
-                .padding(5)
+                .padding(10)
+                .foregroundColor(Color.white)
                 
                 Spacer()
             }
@@ -29,9 +35,9 @@ struct FindImageView: View {
     }
 }
 
-struct FindImageView_Previews: PreviewProvider {
-    static var previews: some View {
-        FindImageView()
-            .previewLayout(.fixed(width: 300, height: 200))
-    }
-}
+//struct FindImageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FindImageView()
+//            .previewLayout(.fixed(width: 300, height: 200))
+//    }
+//}

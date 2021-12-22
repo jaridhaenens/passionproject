@@ -40,7 +40,8 @@ class ViewModel: ObservableObject {
                                         description: d["description"] as? String ?? "",
                                         image: d["image"] as? String ?? "",
                                         latitude: d["longitude"] as? Double ?? 0.0,
-                                        longitude: d["longitude"] as? Double ?? 0.0
+                                        longitude: d["longitude"] as? Double ?? 0.0,
+                                        firstLocation: d["firstLoction"] as? String ?? ""
                                         //                                        chapters: d["chapters"] as? Identifiable as! Chapter
                             )
                         }

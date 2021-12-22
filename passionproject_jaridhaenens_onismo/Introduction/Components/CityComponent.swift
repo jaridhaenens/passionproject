@@ -14,7 +14,7 @@ struct CityComponent: View {
     var body: some View {
 //        let url = URL(string: city.image)
         let url = URL(string: "https://i.ibb.co\(city.image)")
-        VStack(alignment: .leading) {
+        VStack() {
 //            Image("ghent_cover")
 //                .resizable()
 //                    .scaledToFit()
@@ -26,7 +26,7 @@ struct CityComponent: View {
                 .frame(width: 300, height: 180)
             }
             
-            Text("Gent")
+            Text(city.city)
             
             Spacer()
 

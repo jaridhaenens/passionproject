@@ -23,10 +23,35 @@ struct LaunchView: View {
                     .font(.custom("Gilroy-ExtraBold", size: 45))
                     .foregroundColor(Color("titleColor"))
                 
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit augmented reality. Pellentesque habitant morbi tristique senectus.")
-                    .font(.custom("Poppins-Regular", size: 16))
-                    .tracking(0.6)
-                    .padding(.vertical)
+                Group {
+                    Text("De ")
+                        .font(.custom("Poppins-Regular", size: 16))
+                        .tracking(0.6)
+                        
+                        + Text("Onismo ")
+                        .bold()
+                        
+                        + Text("app maakt het mogelijk om een stad op een nieuwe manier te ontdekken, het beschikt over een ")
+                        .font(.custom("Poppins-Regular", size: 16))
+                        .tracking(0.6)
+                        
+                        + Text("fotozoektocht ")
+                        
+                        + Text("op basis van ")
+                        .font(.custom("Poppins-Regular", size: 16))
+                        .tracking(0.6)
+                        
+                        + Text("Artificial Intellegence ")
+                        .bold()
+                        
+                        + Text("die dan het gevonden object tot leven brengt met ")
+                        .font(.custom("Poppins-Regular", size: 16))
+                        .tracking(0.6)
+                        
+                        + Text("Augmented Reality.")
+                        .bold()
+                }
+                    
 
                 NavigationLink(destination: ToursOverview()) {
                     HStack {

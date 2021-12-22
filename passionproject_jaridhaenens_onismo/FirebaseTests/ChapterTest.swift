@@ -25,6 +25,7 @@ struct ChapterTest: View {
     var body: some View {
         
         VStack {
+            
             ForEach(chapterModel.chapterItem) { item in
                 RouteView(item: item)
                     .onAppear {
@@ -33,12 +34,12 @@ struct ChapterTest: View {
                     .ignoresSafeArea()
                 
                 VStack(alignment: .leading) {
-                    Text("\(item.name) at lat:\(item.latitude) and long:\(item.longitude)")
+                    Text("\(item.name)")
                         .font(.custom("Gilroy-ExtraBold", size: 25))
                         .foregroundColor(Color("titleColor"))
                         .padding(.vertical, 7.0)
                     
-                    Text(item.text)
+                    Text(item.description)
                         .font(.custom("Poppins-Regular", size: 16))
                         .tracking(0.6)
                         .padding(.bottom, 40.0)

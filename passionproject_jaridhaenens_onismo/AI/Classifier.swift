@@ -9,7 +9,7 @@ struct Classifier {
     
     mutating func detect(ciImage: CIImage) {
         
-        guard let model = try? VNCoreMLModel(for: completeModel(configuration: MLModelConfiguration()).model)
+        guard let model = try? VNCoreMLModel(for: gentModel(configuration: MLModelConfiguration()).model)
         else {
             return
         }

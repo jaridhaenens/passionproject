@@ -9,8 +9,18 @@ import Foundation
 
 class ProgressModel: ObservableObject {
     @Published var currentChapter:Double = 1
+    @Published var modelSaved:Bool = false
+    @Published var numChapters: Int = 0
+    @Published var lastChapter: Bool = false
+    @Published var capturedModels: Array = [""]
+    
     
     func nextChapter() {
         currentChapter += 1
     }
 }
+
+//
+//class ChapterAmount: ObservableObject {
+//    @Published var numChapters: Int = 0
+//}

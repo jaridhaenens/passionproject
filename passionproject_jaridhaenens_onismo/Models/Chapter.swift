@@ -17,6 +17,11 @@ struct Chapter: Identifiable {
     var longitude: Double
     var name: String
     var text: String
+//    var models: [String]
+    var object: String
+    var image: String
+    var description: String
+    var imageAi: String
     
     
 //    init(snapshot: QueryDocumentSnapshot) {
@@ -31,3 +36,7 @@ struct Chapter: Identifiable {
 //    }
 }
 
+struct ChapterObject: Identifiable {
+    var id: String = UUID().uuidString
+    var modelName: String
+}

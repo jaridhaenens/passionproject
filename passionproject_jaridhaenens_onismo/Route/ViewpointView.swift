@@ -12,7 +12,7 @@ import AVFoundation
 var audioPlayer: AVAudioPlayer?
 
 func loadAudio(sound: String, type: String) {
-    if let path = Bundle.main.path(forResource: "christmas", ofType: "mp3") {
+    if let path = Bundle.main.path(forResource: "gravensteen", ofType: "mp3") {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
             audioPlayer?.prepareToPlay()
@@ -33,57 +33,128 @@ struct ViewpointView: View {
     
     
     var body: some View {
-        VStack(alignment: .leading) {
-            NavigationLink(destination: aiWithCameraView(imageClassifier: ImageClassifier(), confidenceClassifier: ConfidenceClassifier())){
+        ZStack {
+            VStack(alignment: .leading) {
+                GeometryReader { geometry in ScrollView{
+                    Image(chapter.image)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(maxWidth: .infinity)
+                        .clipped()
+                        .cornerRadius(5)
+                    
+                    Spacer()
+                    
+                    Text("Hoofdstuk \(chapter.chapterId, specifier: "%.0f"): \(chapter.name)")
+                        .font(.custom("Gilroy-ExtraBold", size: 25))
+                        .foregroundColor(Color("titleColor"))
+                        .padding(.vertical)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    
+                    
+                 
+                        Text(chapter.text)
+                            .font(.custom("Poppins-Regular", size: 16))
+                            .tracking(0.6)
+                            .foregroundColor(Color("textColor"))
+                            .lineSpacing(2)
+                            .frame(
+                                minWidth: geometry.size.width,
+                                idealWidth: geometry.size.width,
+                                maxWidth: geometry.size.width,
+                                minHeight: geometry.size.height,
+                                idealHeight: geometry.size.height,
+                                maxHeight: .infinity,
+                                alignment: .topLeading)
                 
-                FindImageView()
-                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.purple/*@END_MENU_TOKEN@*/)
-                    .cornerRadius(10)
-            }
-            Spacer()
-            Text("Hoofdstuk 1: \(chapter.name)")
-                .font(.custom("Gilroy-ExtraBold", size: 25))
-                .foregroundColor(Color("titleColor"))
-                .padding(.vertical)
-            
-            Text(chapter.text)
-                .font(.custom("Poppins-Regular", size: 16))
-                .tracking(0.6)
-                .foregroundColor(Color("textColor"))
-                .lineSpacing(2)
-            
-            
-            //            Toggle("Show welcome message", isOn: $audioActive)
-            
-            if audioActive {
-                Button(action: {
-                    //                    playSound(sound: "christmas", type: "mp3")
-                    audioPlayer?.pause()
+                   
                     
-                    audioActive = false
-                }) {
-                    Image(systemName: "pause.fill")
-                }
-            } else {
-                Button(action: {
-                    //                    playSound(sound: "christmas", type: "mp3")
                     
-                    if audioLoaded {
-                        audioPlayer?.play()
-                    } else {
-                        loadAudio(sound: "christmas", type: "mp3")
-                        audioPlayer?.play()
-                        audioLoaded = true
+                    //            Toggle("Show welcome message", isOn: $audioActive)
+                    
+                    
+                    Text("Breng de stad tot leven")
+                        .font(.custom("Gilroy-ExtraBold", size: 19))
+                        .foregroundColor(Color("titleColor"))
+                        .padding(.vertical)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.top, -30)
+                    
+                    NavigationLink(destination: aiWithCameraView(chapter: chapter, imageClassifier: ImageClassifier(), confidenceClassifier: ConfidenceClassifier()).onAppear(){audioPlayer?.pause()}){
+                        
+                        FindImageView(chapter: chapter)
+                            .background(Color("darkColor"))
+                            .cornerRadius(5)
                     }
+                    .padding(.bottom, 10)
                     
-                    audioActive = true
-                }) {
-                    Image(systemName: "play.fill")
+                    
+                }}
+            }
+            
+            .padding(.horizontal)
+            
+            
+            VStack {
+                
+                Spacer()
+                
+                if audioActive {
+                    Button(action: {
+                    
+                        audioPlayer?.pause()
+                        
+                        audioActive = false
+                    }) {
+                        Image(systemName: "pause.fill")
+                            .frame(width: 70, height: 70)
+                        
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 100)
+                                    .stroke(Color.black, lineWidth: 3)
+                                
+                            )
+                            
+                            .background(Color.white)
+                            .foregroundColor(Color.black)
+                            
+                            .cornerRadius(100)
+                    }
+                    .shadow(radius: 2)
+                    .font(.title)
+                } else {
+                    Button(action: {
+            
+                        
+                        if audioLoaded {
+                            audioPlayer?.play()
+                        } else {
+                            loadAudio(sound: "gravensteen", type: "mp3")
+                            audioPlayer?.play()
+                            audioLoaded = true
+                        }
+                        
+                        audioActive = true
+                    }) {
+                        Image(systemName: "play.fill")
+                            .frame(width: 70, height: 70)
+                            .cornerRadius(100)
+                            //                            .border(Color.black)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 100)
+                                    .stroke(Color.black, lineWidth: 3)
+                            )
+                            .foregroundColor(Color.black)
+                            .background(Color.white)
+                            .cornerRadius(100)
+                    }
+                    .shadow(radius: 2)
+                    .font(.title)
                 }
+                
             }
         }
-        
-        .padding(.all)
+        .onDisappear(){audioPlayer?.pause()}
     }
 }
 

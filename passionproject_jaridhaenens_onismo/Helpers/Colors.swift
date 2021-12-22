@@ -13,4 +13,5 @@ struct customColors {
     static let titleColor = Color("titleColor")
     static let textColor = Color("textColor")
     static let primaryColor = Color("primaryColor")
+    static let lightGray = Color("lightGray")
 }

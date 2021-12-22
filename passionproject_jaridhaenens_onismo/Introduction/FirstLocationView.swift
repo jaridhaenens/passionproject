@@ -21,6 +21,7 @@ struct Place: Identifiable {
 struct FirstLocationView: View {
     
     @StateObject private var viewModel = CurrentLocationView()
+    @EnvironmentObject var progressModel: ProgressModel
     var city: Tour
     
     let places = [
@@ -47,7 +48,7 @@ struct FirstLocationView: View {
             .ignoresSafeArea(.all)
             .padding(.bottom, 40.0)
             
-            Group { Text(city.city) + Text("Maria Hendrika Plein, nabij het station Gent-Sint-Pieters")
+            Group { Text("Eerste locatie: ") + Text("Maria Hendrika Plein, nabij het station Gent-Sint-Pieters")
                 .bold()
                 + Text("")}
                 .padding()
@@ -78,6 +79,7 @@ struct FirstLocationView: View {
                 Text("Ik ben op de locatie")
             }
             .padding(.vertical, 3.0)
+            
             
             Spacer()
         }

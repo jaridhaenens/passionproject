@@ -11,18 +11,24 @@
 		E72395AA2757A85700F0F2DE /* ViewpointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395A92757A85700F0F2DE /* ViewpointView.swift */; };
 		E72395AF2757B0C100F0F2DE /* FindImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395AE2757B0C100F0F2DE /* FindImageView.swift */; };
 		E72395B12757C78400F0F2DE /* ArView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395B02757C78400F0F2DE /* ArView.swift */; };
-		E72395B42757C7E900F0F2DE /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E72395B32757C7E900F0F2DE /* toy_drummer.usdz */; };
 		E72395B62757CE9900F0F2DE /* ArController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395B52757CE9900F0F2DE /* ArController.swift */; };
 		E72395DB2758142600F0F2DE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72395DA2758142600F0F2DE /* Launch Screen.storyboard */; };
 		E72395DD2758236B00F0F2DE /* ArModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72395DC2758236B00F0F2DE /* ArModel.swift */; };
 		E72395E027584ACD00F0F2DE /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = E72395DF27584ACD00F0F2DE /* FocusEntity */; };
-		E72395E227584F4100F0F2DE /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E72395E127584F4000F0F2DE /* gramophone.usdz */; };
-		E72395E427584FBA00F0F2DE /* toy_car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E72395E327584FBA00F0F2DE /* toy_car.usdz */; };
+		E72395E227584F4100F0F2DE /* stmichielsbrug-object.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E72395E127584F4000F0F2DE /* stmichielsbrug-object.usdz */; };
+		E72395E427584FBA00F0F2DE /* graffiti-object.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E72395E327584FBA00F0F2DE /* graffiti-object.usdz */; };
 		E72EC255276D0F1100FC7A20 /* ToursOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EC254276D0F1100FC7A20 /* ToursOverview.swift */; };
 		E72EC258276D0FF200FC7A20 /* CityComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EC257276D0FF200FC7A20 /* CityComponent.swift */; };
 		E72EC27D276D219100FC7A20 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = E72EC27C276D219100FC7A20 /* URLImage */; };
 		E72EC27F276D219100FC7A20 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = E72EC27E276D219100FC7A20 /* URLImageStore */; };
 		E72EC281276D29A600FC7A20 /* FirstLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EC280276D29A600FC7A20 /* FirstLocationView.swift */; };
+		E7443F2D277216D800CE8FEB /* CountChaptersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7443F2C277216D800CE8FEB /* CountChaptersModel.swift */; };
+		E7443F2F27730EE200CE8FEB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7443F2E27730EE200CE8FEB /* DetailView.swift */; };
+		E7443F3127733F7E00CE8FEB /* gravensteen-object.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E7443F3027733F7E00CE8FEB /* gravensteen-object.usdz */; };
+		E7443F33277354E300CE8FEB /* gravensteen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7443F32277354E300CE8FEB /* gravensteen.mp3 */; };
+		E7443F392773816100CE8FEB /* gentModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E7443F382773816100CE8FEB /* gentModel.mlmodel */; };
+		E7443F3B2773981F00CE8FEB /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7443F3A2773981F00CE8FEB /* EndView.swift */; };
+		E7443F3D2773A0F000CE8FEB /* ArViewCaptured.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7443F3C2773A0F000CE8FEB /* ArViewCaptured.swift */; };
 		E74616E2276B8B7400B40E99 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74616E1276B8B7400B40E99 /* ViewModel.swift */; };
 		E7555A92275ECAD30013B501 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7555A91275ECAD30013B501 /* LaunchView.swift */; };
 		E7555A94275ED0B50013B501 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7555A93275ED0B50013B501 /* Colors.swift */; };
@@ -31,9 +37,8 @@
 		E7555A9B275ED4BB0013B501 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7555A9A275ED4BB0013B501 /* Poppins-Bold.ttf */; };
 		E7555AA1275EF8450013B501 /* UpdateUserCoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7555AA0275EF8450013B501 /* UpdateUserCoords.swift */; };
 		E7555AA3275F01470013B501 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7555AA2275F01470013B501 /* TestView.swift */; };
-		E7555AA8275FAC9A0013B501 /* christmas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7555AA7275FAC9A0013B501 /* christmas.mp3 */; };
 		E7555AAA276019280013B501 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7555AA9276019280013B501 /* AudioController.swift */; };
-		E7655789276EF77C007AFCD4 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7655788276EF77C007AFCD4 /* Progress.swift */; };
+		E7655789276EF77C007AFCD4 /* AmountChapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7655788276EF77C007AFCD4 /* AmountChapters.swift */; };
 		E765578B276EF9FC007AFCD4 /* ProgressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765578A276EF9FC007AFCD4 /* ProgressModel.swift */; };
 		E7778805275662CB0045B9D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7778804275662CB0045B9D9 /* AppDelegate.swift */; };
 		E7778807275662CB0045B9D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7778806275662CB0045B9D9 /* ContentView.swift */; };
@@ -65,15 +70,21 @@
 		E72395A92757A85700F0F2DE /* ViewpointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewpointView.swift; sourceTree = "<group>"; };
 		E72395AE2757B0C100F0F2DE /* FindImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindImageView.swift; sourceTree = "<group>"; };
 		E72395B02757C78400F0F2DE /* ArView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArView.swift; sourceTree = "<group>"; };
-		E72395B32757C7E900F0F2DE /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
 		E72395B52757CE9900F0F2DE /* ArController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArController.swift; sourceTree = "<group>"; };
 		E72395DA2758142600F0F2DE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E72395DC2758236B00F0F2DE /* ArModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArModel.swift; sourceTree = "<group>"; };
-		E72395E127584F4000F0F2DE /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
-		E72395E327584FBA00F0F2DE /* toy_car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_car.usdz; sourceTree = "<group>"; };
+		E72395E127584F4000F0F2DE /* stmichielsbrug-object.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "stmichielsbrug-object.usdz"; sourceTree = "<group>"; };
+		E72395E327584FBA00F0F2DE /* graffiti-object.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "graffiti-object.usdz"; sourceTree = "<group>"; };
 		E72EC254276D0F1100FC7A20 /* ToursOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursOverview.swift; sourceTree = "<group>"; };
 		E72EC257276D0FF200FC7A20 /* CityComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityComponent.swift; sourceTree = "<group>"; };
 		E72EC280276D29A600FC7A20 /* FirstLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLocationView.swift; sourceTree = "<group>"; };
+		E7443F2C277216D800CE8FEB /* CountChaptersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountChaptersModel.swift; sourceTree = "<group>"; };
+		E7443F2E27730EE200CE8FEB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E7443F3027733F7E00CE8FEB /* gravensteen-object.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "gravensteen-object.usdz"; sourceTree = "<group>"; };
+		E7443F32277354E300CE8FEB /* gravensteen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gravensteen.mp3; sourceTree = "<group>"; };
+		E7443F382773816100CE8FEB /* gentModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = gentModel.mlmodel; sourceTree = "<group>"; };
+		E7443F3A2773981F00CE8FEB /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
+		E7443F3C2773A0F000CE8FEB /* ArViewCaptured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArViewCaptured.swift; sourceTree = "<group>"; };
 		E74616E1276B8B7400B40E99 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		E7555A91275ECAD30013B501 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		E7555A93275ED0B50013B501 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -82,9 +93,8 @@
 		E7555A9A275ED4BB0013B501 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		E7555AA0275EF8450013B501 /* UpdateUserCoords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserCoords.swift; sourceTree = "<group>"; };
 		E7555AA2275F01470013B501 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		E7555AA7275FAC9A0013B501 /* christmas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = christmas.mp3; sourceTree = "<group>"; };
 		E7555AA9276019280013B501 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
-		E7655788276EF77C007AFCD4 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		E7655788276EF77C007AFCD4 /* AmountChapters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountChapters.swift; sourceTree = "<group>"; };
 		E765578A276EF9FC007AFCD4 /* ProgressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressModel.swift; sourceTree = "<group>"; };
 		E7778801275662CB0045B9D9 /* passionproject_jaridhaenens_onismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passionproject_jaridhaenens_onismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7778804275662CB0045B9D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -164,9 +174,9 @@
 		E72395B22757C7D700F0F2DE /* AR Models */ = {
 			isa = PBXGroup;
 			children = (
-				E72395E127584F4000F0F2DE /* gramophone.usdz */,
-				E72395E327584FBA00F0F2DE /* toy_car.usdz */,
-				E72395B32757C7E900F0F2DE /* toy_drummer.usdz */,
+				E7443F3027733F7E00CE8FEB /* gravensteen-object.usdz */,
+				E72395E127584F4000F0F2DE /* stmichielsbrug-object.usdz */,
+				E72395E327584FBA00F0F2DE /* graffiti-object.usdz */,
 			);
 			path = "AR Models";
 			sourceTree = "<group>";
@@ -205,7 +215,7 @@
 		E7555AA4275FAC7B0013B501 /* Audio files */ = {
 			isa = PBXGroup;
 			children = (
-				E7555AA7275FAC9A0013B501 /* christmas.mp3 */,
+				E7443F32277354E300CE8FEB /* gravensteen.mp3 */,
 			);
 			path = "Audio files";
 			sourceTree = "<group>";
@@ -277,11 +287,13 @@
 			children = (
 				E7555AA4275FAC7B0013B501 /* Audio files */,
 				E72395AC2757B09A00F0F2DE /* Models */,
-				E7778817275663D30045B9D9 /* ChapterView.swift */,
 				E72395AE2757B0C100F0F2DE /* FindImageView.swift */,
+				E7778817275663D30045B9D9 /* ChapterView.swift */,
 				E7555AA0275EF8450013B501 /* UpdateUserCoords.swift */,
 				E7778816275663D30045B9D9 /* RouteView.swift */,
+				E7443F2E27730EE200CE8FEB /* DetailView.swift */,
 				E72395A92757A85700F0F2DE /* ViewpointView.swift */,
+				E7443F3A2773981F00CE8FEB /* EndView.swift */,
 			);
 			path = Route;
 			sourceTree = "<group>";
@@ -291,6 +303,7 @@
 			children = (
 				E72395B22757C7D700F0F2DE /* AR Models */,
 				E72395B02757C78400F0F2DE /* ArView.swift */,
+				E7443F3C2773A0F000CE8FEB /* ArViewCaptured.swift */,
 				E72395B52757CE9900F0F2DE /* ArController.swift */,
 				E72395DC2758236B00F0F2DE /* ArModel.swift */,
 			);
@@ -301,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				E791E5412768727F00E43FA9 /* completeModel.mlmodel */,
+				E7443F382773816100CE8FEB /* gentModel.mlmodel */,
 				E791E5422768727F00E43FA9 /* MobileNetV2.mlmodel */,
 			);
 			path = "AI Models";
@@ -320,7 +334,7 @@
 			children = (
 				E7C0CAE8276BD26700AF9ECE /* Chapter.swift */,
 				E7F305B4276B7F6000CF1205 /* Tour.swift */,
-				E7655788276EF77C007AFCD4 /* Progress.swift */,
+				E7655788276EF77C007AFCD4 /* AmountChapters.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,6 +345,7 @@
 				E74616E1276B8B7400B40E99 /* ViewModel.swift */,
 				E7C0CAED276BE3DF00AF9ECE /* ChapterModelView.swift */,
 				E765578A276EF9FC007AFCD4 /* ProgressModel.swift */,
+				E7443F2C277216D800CE8FEB /* CountChaptersModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -406,13 +421,13 @@
 				E777880E275662CC0045B9D9 /* Preview Assets.xcassets in Resources */,
 				E7555A9B275ED4BB0013B501 /* Poppins-Bold.ttf in Resources */,
 				E777880B275662CC0045B9D9 /* Assets.xcassets in Resources */,
+				E7443F33277354E300CE8FEB /* gravensteen.mp3 in Resources */,
+				E7443F3127733F7E00CE8FEB /* gravensteen-object.usdz in Resources */,
 				E72395DB2758142600F0F2DE /* Launch Screen.storyboard in Resources */,
 				E7555A97275ED3B50013B501 /* Gilroy-ExtraBold.ttf in Resources */,
-				E72395B42757C7E900F0F2DE /* toy_drummer.usdz in Resources */,
-				E72395E227584F4100F0F2DE /* gramophone.usdz in Resources */,
-				E7555AA8275FAC9A0013B501 /* christmas.mp3 in Resources */,
+				E72395E227584F4100F0F2DE /* stmichielsbrug-object.usdz in Resources */,
 				E7C5E783276B697D005934A2 /* GoogleService-Info.plist in Resources */,
-				E72395E427584FBA00F0F2DE /* toy_car.usdz in Resources */,
+				E72395E427584FBA00F0F2DE /* graffiti-object.usdz in Resources */,
 				E7555A99275ED4A80013B501 /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,15 +482,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E791E53C276871F800E43FA9 /* Classifier.swift in Sources */,
+				E7443F2F27730EE200CE8FEB /* DetailView.swift in Sources */,
 				E7778807275662CB0045B9D9 /* ContentView.swift in Sources */,
 				E7778819275663D30045B9D9 /* RouteView.swift in Sources */,
+				E7443F2D277216D800CE8FEB /* CountChaptersModel.swift in Sources */,
 				E7C0CAEE276BE3DF00AF9ECE /* ChapterModelView.swift in Sources */,
 				E72395AF2757B0C100F0F2DE /* FindImageView.swift in Sources */,
 				E7F305B5276B7F6000CF1205 /* Tour.swift in Sources */,
-				E7655789276EF77C007AFCD4 /* Progress.swift in Sources */,
+				E7655789276EF77C007AFCD4 /* AmountChapters.swift in Sources */,
 				E791E53D276871F800E43FA9 /* ImagePickerView.swift in Sources */,
 				E74616E2276B8B7400B40E99 /* ViewModel.swift in Sources */,
 				E7C0CAEC276BE2A700AF9ECE /* ChapterTest.swift in Sources */,
+				E7443F3B2773981F00CE8FEB /* EndView.swift in Sources */,
 				E777881A275663D30045B9D9 /* ChapterView.swift in Sources */,
 				E7778805275662CB0045B9D9 /* AppDelegate.swift in Sources */,
 				E72EC258276D0FF200FC7A20 /* CityComponent.swift in Sources */,
@@ -484,6 +502,7 @@
 				E72EC281276D29A600FC7A20 /* FirstLocationView.swift in Sources */,
 				E7C0CAE9276BD26700AF9ECE /* Chapter.swift in Sources */,
 				E7555AA3275F01470013B501 /* TestView.swift in Sources */,
+				E7443F3D2773A0F000CE8FEB /* ArViewCaptured.swift in Sources */,
 				E7778818275663D30045B9D9 /* CurrentLocationModel.swift in Sources */,
 				E72EC255276D0F1100FC7A20 /* ToursOverview.swift in Sources */,
 				E791E53A276871F800E43FA9 /* ImageClassifier.swift in Sources */,
@@ -496,6 +515,7 @@
 				E791E53B276871F800E43FA9 /* aiWithCameraView.swift in Sources */,
 				E791E546276878E300E43FA9 /* ConfidenceClassifier.swift in Sources */,
 				E7778809275662CB0045B9D9 /* Experience.rcproject in Sources */,
+				E7443F392773816100CE8FEB /* gentModel.mlmodel in Sources */,
 				E7555A92275ECAD30013B501 /* LaunchView.swift in Sources */,
 				E72395B62757CE9900F0F2DE /* ArController.swift in Sources */,
 				E791E5442768728B00E43FA9 /* MobileNetV2.mlmodel in Sources */,

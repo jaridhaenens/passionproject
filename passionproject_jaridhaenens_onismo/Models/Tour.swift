@@ -15,7 +15,7 @@ struct Tour: Identifiable {
     var image: String
     var latitude: Double
     var longitude: Double
-
+    var firstLocation: String
     
 }
 
